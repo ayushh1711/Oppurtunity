@@ -1,0 +1,91 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="../index.html" class="brand">
+                <span class="brand-row">
+                    <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" class="university-logo">
+                    <span class="brand-text">
+                        <strong>Opportunity-X</strong>
+                        <small>Campus Opportunity Portal</small>
+                    </span>
+                </span>
+            </a>
+
+            <nav class="links">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="student.html">Students</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="notices.html">Notices</a>
+                <a href="registrations.html">Registrations</a>
+                <a href="../index.html">Home</a>
+                <a href="../admin-login.html" onclick="sessionStorage.removeItem('opportunityX_session')">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Administrator Dashboard</h1>
+            <p class="muted">Manage students, clubs, campus events and announcements.</p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents" style="font-size:32px;font-weight:700;color:#0b1f3a;">0</p>
+                <a class="btn" href="student.html">View Students</a>
+            </article>
+
+            <article class="card">
+                <h3>Approved Clubs</h3>
+                <p id="totalClubs" style="font-size:32px;font-weight:700;color:#0b1f3a;">0</p>
+                <a class="btn" href="clubs.html">Manage Clubs</a>
+            </article>
+
+            <article class="card">
+                <h3>Total Events</h3>
+                <p id="totalEvents" style="font-size:32px;font-weight:700;color:#0b1f3a;">0</p>
+                <a class="btn" href="events.html">Manage Events</a>
+            </article>
+
+            <article class="card">
+                <h3>Total Notices</h3>
+                <p id="totalNotices" style="font-size:32px;font-weight:700;color:#0b1f3a;">0</p>
+                <a class="btn" href="notices.html">Manage Notices</a>
+            </article>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <h2>Quick Actions</h2>
+                <p>Use these shortcuts to manage the Opportunity-X portal.</p>
+                <div class="row">
+                    <a class="btn" href="student.html">View Students</a>
+                    <a class="btn" href="clubs.html">Manage Clubs</a>
+                    <a class="btn" href="clubs.html">Review Club Applications</a>
+                    <a class="btn" href="events.html">Create Events</a>
+                    <a class="btn" href="notices.html">Publish Notice</a>
+                    <a class="btn" href="registrations.html">View Registrations</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Campus Opportunity Portal</p>
+        <p>Administrator Dashboard</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

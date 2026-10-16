@@ -1,0 +1,94 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Notices | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="university-header">
+        <div class="university-brand">
+            <img src="../assets/gehu-logo.png" alt="GEHU Logo" class="university-logo">
+            <div>
+                <div class="university-text">Graphic Era Hill University</div>
+                <div class="university-label">Dehradun, Uttarakhand</div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" style="width:42px;height:42px;object-fit:contain;background:white;border-radius:8px;padding:3px;">
+            <span>Opportunity-X</span>
+        </a>
+        <div class="links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="student.html">Students</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="notices.html">Notices</a>
+            <a href="registrations.html">Registrations</a>
+            <a href="../admin-login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">ADMIN PANEL</span>
+            <h1>Manage Notices</h1>
+            <p>Publish announcements and important updates for students.</p>
+        </section>
+
+        <section class="card">
+            <h2>Publish a Notice</h2>
+            <p>Create an announcement and choose which students should receive it.</p>
+
+            <form id="noticeForm">
+                <div>
+                    <label for="noticeTitle">Notice Title</label>
+                    <input type="text" id="noticeTitle" name="noticeTitle" placeholder="e.g. Event Registration Open" required>
+                </div>
+
+                <div>
+                    <label for="noticeMessage">Notice Details</label>
+                    <textarea id="noticeMessage" name="noticeMessage" rows="5" placeholder="Write the complete announcement here..." required></textarea>
+                </div>
+
+                <div>
+                    <label for="noticeTarget">Target Audience</label>
+                    <select id="noticeTarget" name="noticeTarget" required>
+                        <option value="all">All Students</option>
+                        <option value="Coding">Students interested in Coding</option>
+                        <option value="Robotics">Students interested in Robotics</option>
+                        <option value="Dance">Students interested in Dance</option>
+                        <option value="Singing">Students interested in Singing</option>
+                        <option value="Photography">Students interested in Photography</option>
+                        <option value="Graphic Design">Students interested in Graphic Design</option>
+                        <option value="Sports">Students interested in Sports</option>
+                        <option value="Volunteering">Students interested in Volunteering</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Publish Notice</button>
+                <p id="noticeMessageStatus" role="status"></p>
+            </form>
+        </section>
+
+        <section class="card" style="margin-top:24px;">
+            <h2>Published Notices</h2>
+            <p>Your published announcements will appear here.</p>
+            <div id="adminNoticeList">
+                <p>No notices to display yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Events | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="university-header">
+        <div class="university-brand">
+            <img src="../assets/gehu-logo.png" alt="GEHU Logo" class="university-logo">
+            <div>
+                <div class="university-text">Graphic Era Hill University</div>
+                <div class="university-label">Dehradun, Uttarakhand</div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" style="width:42px;height:42px;object-fit:contain;background:white;border-radius:8px;padding:3px;">
+            <span>Opportunity-X</span>
+        </a>
+        <div class="links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="skills.html">My Skills</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="registrations.html">My Registrations</a>
+            <a href="../student-login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">STUDENT PORTAL</span>
+            <h1>Discover University Events</h1>
+            <p>Find workshops, competitions, cultural activities, and other opportunities to participate.</p>
+        </section>
+
+        <section class="card">
+            <h2>Find Events</h2>
+            <div class="grid">
+                <div>
+                    <label for="eventSearch">Search Events</label>
+                    <input type="search" id="eventSearch" placeholder="Search by event name or skill">
+                </div>
+
+                <div>
+                    <label for="eventClubFilter">Filter by Club</label>
+                    <select id="eventClubFilter">
+                        <option value="all">All Clubs</option>
+                        <option value="c1">Cultural Club</option>
+                        <option value="c2">Coding Club</option>
+                        <option value="c3">Photography Club</option>
+                        <option value="c4">Sports Club</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top:24px;">
+            <h2>Upcoming Events</h2>
+            <div id="studentEventList" class="grid">
+                <div class="card">
+                    <h2>Annual Dance Competition</h2>
+                    <p>Showcase your dance skills and participate in a university competition.</p>
+                    <p><strong>Date:</strong> 12 November 2026</p>
+                    <p><strong>Organised by:</strong> Cultural Club</p>
+                    <button type="button" class="btn" disabled>Register</button>
+                </div>
+
+                <div class="card">
+                    <h2>Coding Workshop</h2>
+                    <p>Learn programming concepts and improve your problem-solving skills.</p>
+                    <p><strong>Date:</strong> 18 November 2026</p>
+                    <p><strong>Organised by:</strong> Coding Club</p>
+                    <button type="button" class="btn" disabled>Register</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top:24px;">
+            <h2>My Event Registrations</h2>
+            <p>Events you register for will appear here.</p>
+            <div id="myEventRegistrations">
+                <p>You have not registered for any events yet.</p>
+            </div>
+        </section>
+
+        <p id="eventActionMessage" role="status"></p>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

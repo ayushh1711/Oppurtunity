@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Clubs | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="university-header">
+        <div class="university-brand">
+            <img src="../assets/gehu-logo.png" alt="GEHU Logo" class="university-logo">
+            <div>
+                <div class="university-text">Graphic Era Hill University</div>
+                <div class="university-label">Dehradun, Uttarakhand</div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" style="width:42px;height:42px;object-fit:contain;background:white;border-radius:8px;padding:3px;">
+            <span>Opportunity-X</span>
+        </a>
+        <div class="links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="skills.html">My Skills</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="registrations.html">My Registrations</a>
+            <a href="../student-login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">STUDENT PORTAL</span>
+            <h1>Explore University Clubs</h1>
+            <p>Discover communities, meet people with similar interests, and develop your skills.</p>
+        </section>
+
+        <section class="card">
+            <h2>Find Your Club</h2>
+            <div class="grid">
+                <div>
+                    <label for="clubSearch">Search Clubs</label>
+                    <input type="search" id="clubSearch" placeholder="Search by club name or skill">
+                </div>
+                <div>
+                    <label for="clubCategoryFilter">Filter by Category</label>
+                    <select id="clubCategoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Creative">Creative</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Social">Social Service</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top:24px;">
+            <div id="studentClubList" class="grid">
+                <div class="card">
+                    <h2>Cultural Club</h2>
+                    <p>Participate in cultural activities, performances, and university celebrations.</p>
+                    <p><strong>Skills:</strong> Dance, Singing, Music</p>
+                    <button type="button" class="btn" disabled>Join Club</button>
+                </div>
+                <div class="card">
+                    <h2>Coding Club</h2>
+                    <p>Explore programming, coding challenges, and technical learning opportunities.</p>
+                    <p><strong>Skills:</strong> Coding, Robotics</p>
+                    <button type="button" class="btn" disabled>Join Club</button>
+                </div>
+                <div class="card">
+                    <h2>Photography Club</h2>
+                    <p>Improve your photography skills and capture campus activities.</p>
+                    <p><strong>Skills:</strong> Photography, Graphic Design</p>
+                    <button type="button" class="btn" disabled>Join Club</button>
+                </div>
+                <div class="card">
+                    <h2>Sports Club</h2>
+                    <p>Take part in sports activities, competitions, and fitness events.</p>
+                    <p><strong>Skills:</strong> Sports, Teamwork</p>
+                    <button type="button" class="btn" disabled>Join Club</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top:24px;">
+            <h2>My Clubs</h2>
+            <p>Clubs you join will be listed here.</p>
+            <div id="myClubsList">
+                <p>You have not joined any clubs yet.</p>
+            </div>
+        </section>
+
+        <p id="clubActionMessage" role="status"></p>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

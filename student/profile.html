@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="university-header">
+        <div class="university-brand">
+            <img src="../assets/gehu-logo.png" alt="GEHU Logo" class="university-logo">
+            <div>
+                <div class="university-text">Graphic Era Hill University</div>
+                <div class="university-label">Dehradun, Uttarakhand</div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" style="width:42px;height:42px;object-fit:contain;background:white;border-radius:8px;padding:3px;">
+            <span>Opportunity-X</span>
+        </a>
+
+        <div class="links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="skills.html">My Skills</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="registrations.html">My Registrations</a>
+            <a href="../student-login.html" id="logoutLink">Logout</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">STUDENT PORTAL</span>
+            <h1>My Profile</h1>
+            <p>View and update your personal and academic information.</p>
+        </section>
+
+        <section class="card">
+            <h2>Personal Information</h2>
+
+            <form id="studentProfileForm">
+                <div class="grid">
+                    <div>
+                        <label for="profileStudentId">Student ID</label>
+                        <input type="text" id="profileStudentId" readonly>
+                    </div>
+
+                    <div>
+                        <label for="profileName">Full Name</label>
+                        <input type="text" id="profileName" required maxlength="150">
+                    </div>
+
+                    <div>
+                        <label for="profileEmail">Email Address</label>
+                        <input type="email" id="profileEmail" required maxlength="254">
+                    </div>
+
+                    <div>
+                        <label for="profileCourse">Course</label>
+                        <select id="profileCourse" required>
+                            <option value="BCA">BCA</option>
+                            <option value="BTech">BTech</option>
+                            <option value="BBA">BBA</option>
+                            <option value="BCom">BCom</option>
+                            <option value="MBA">MBA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MTech">MTech</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="profileYear">Year of Study</label>
+                        <select id="profileYear" required>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                            <option value="5">5th Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" id="saveProfileButton">
+                    Save Changes
+                </button>
+
+                <p id="profileMessage" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="card" style="margin-top:24px;">
+            <h2>My Skills and Interests</h2>
+            <p>Your selected skills help Opportunity-X recommend suitable clubs and events.</p>
+
+            <div id="profileSkills">
+                <p>Loading your skills...</p>
+            </div>
+
+            <a href="skills.html" class="btn">Manage My Skills</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+    </footer>
+
+    <script src="../js/student-profile-api.js"></script>
+</body>
+</html>

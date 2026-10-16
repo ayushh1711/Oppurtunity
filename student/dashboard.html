@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="university-header">
+        <div class="university-brand">
+            <img src="../assets/gehu-logo.png" alt="GEHU Logo" class="university-logo">
+            <div>
+                <div class="university-text">Graphic Era Hill University</div>
+                <div class="university-label">Dehradun, Uttarakhand</div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" style="width:42px;height:42px;object-fit:contain;background:white;border-radius:8px;padding:3px;">
+            <span>Opportunity-X</span>
+        </a>
+        <div class="links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="skills.html">My Skills</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="registrations.html">My Registrations</a>
+            <a href="../student-login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">STUDENT PORTAL</span>
+            <h1>Welcome to Opportunity-X</h1>
+            <p>Discover opportunities, explore clubs, participate in events, and develop your skills.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h2>My Profile</h2>
+                <p>View and update your student information.</p>
+                <a href="profile.html" class="btn">View Profile</a>
+            </div>
+
+            <div class="card">
+                <h2>My Skills</h2>
+                <p>Add your interests and skills to find relevant opportunities.</p>
+                <a href="skills.html" class="btn">Manage Skills</a>
+            </div>
+
+            <div class="card">
+                <h2>Explore Clubs</h2>
+                <p>Find university clubs that match your interests.</p>
+                <a href="clubs.html" class="btn">Explore Clubs</a>
+            </div>
+
+            <div class="card">
+                <h2>Upcoming Events</h2>
+                <p>Discover events and find opportunities to participate.</p>
+                <a href="events.html" class="btn">Explore Events</a>
+            </div>
+
+            <div class="card">
+                <h2>Notifications</h2>
+                <p>Check announcements and important updates.</p>
+                <a href="notifications.html" class="btn">View Notifications</a>
+            </div>
+
+            <div class="card">
+                <h2>My Registrations</h2>
+                <p>Keep track of the clubs and events you have joined.</p>
+                <a href="registrations.html" class="btn">View Registrations</a>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top:24px;">
+            <h2>Recommended for You</h2>
+            <p>Explore clubs and events based on your skills and interests.</p>
+
+            <h3>Recommended Clubs</h3>
+            <div id="studentRecommendedClubs">
+                <p>Your club recommendations will appear here.</p>
+            </div>
+
+            <h3 style="margin-top:20px;">Upcoming Events</h3>
+            <div id="studentUpcomingEvents">
+                <p>Upcoming events will appear here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

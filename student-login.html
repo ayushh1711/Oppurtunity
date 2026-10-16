@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | Opportunity-X</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="university-header">
+        <a href="index.html" class="university-brand">
+            <img src="assets/gehu-logo.png" alt="Graphic Era Hill University Logo" class="university-logo">
+            <div class="university-text">
+                <h2>Graphic Era Hill University</h2>
+                <p>Dehradun, Uttarakhand</p>
+            </div>
+        </a>
+        <span class="university-label">Student Opportunity Portal</span>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="index.html">Opportunity-X</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="student-register.html">Create Account</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card" style="max-width: 480px; margin: 35px auto;">
+            <h2>Student Login</h2>
+            <p class="muted">Sign in to explore your campus opportunities.</p>
+
+            <form id="studentLoginForm">
+                <div>
+                    <label for="studentIdentifier">Student ID or Email</label>
+                    <input
+                        type="text"
+                        id="studentIdentifier"
+                        name="identifier"
+                        placeholder="Enter your student ID or email"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="studentPassword">Password</label>
+                    <input
+                        type="password"
+                        id="studentPassword"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button class="btn" type="submit">Login</button>
+                <p id="studentLoginMessage" role="status" aria-live="polite"></p>
+            </form>
+
+            <p>New student? <a href="student-register.html">Create an account</a></p>
+            <p><a href="index.html">← Back to homepage</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+        <p>Student Opportunity and Campus Activity Portal</p>
+    </footer>
+
+    <script src="js/student-login-api.js"></script>
+</body>
+</html>

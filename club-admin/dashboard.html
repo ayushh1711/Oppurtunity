@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Admin Dashboard | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="navbar">
+            <a href="../index.html" class="brand brand-stacked">
+                <div class="brand-row">
+                    <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo">
+                    <span class="brand-text">
+                        <strong>Opportunity-X</strong>
+                        <small>Campus Opportunity Portal</small>
+                    </span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="../index.html">Home</a>
+                <a href="../club-login.html" id="clubLogout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 id="clubDashboardTitle">Club Admin Dashboard</h1>
+            <p id="clubDashboardWelcome">
+                Manage your club's events, notices and activities.
+            </p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h3>Club Status</h3>
+                <p id="clubDashboardStatus">Approved</p>
+            </article>
+
+            <article class="card">
+                <h3>Total Events</h3>
+                <p id="clubDashboardEventCount">0</p>
+            </article>
+
+            <article class="card">
+                <h3>Total Notices</h3>
+                <p id="clubDashboardNoticeCount">0</p>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Club Management</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Manage Events</h3>
+                    <p>Create, view and manage events organised by your club.</p>
+                    <a href="events.html" class="btn">Manage Events</a>
+                </article>
+
+                <article class="card">
+                    <h3>Manage Notices</h3>
+                    <p>Publish announcements and updates for students.</p>
+                    <a href="notices.html" class="btn">Manage Notices</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Club Administration Portal</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

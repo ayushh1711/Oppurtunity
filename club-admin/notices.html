@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Club Notices | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="navbar">
+            <a href="../index.html" class="brand brand-stacked">
+                <div class="brand-row">
+                    <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo">
+                    <span class="brand-text">
+                        <strong>Opportunity-X</strong>
+                        <small>Campus Opportunity Portal</small>
+                    </span>
+                </div>
+            </a>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="events.html">Manage Events</a>
+                <a href="notices.html" class="active">Manage Notices</a>
+                <a href="../club-login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">CLUB ADMIN</span>
+            <h1>Manage Club Notices</h1>
+            <p>Publish announcements and updates for students interested in your club.</p>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <h2>Publish a Notice</h2>
+
+                <form id="clubNoticeForm">
+                    <div class="form-group">
+                        <label for="clubNoticeTitle">Notice Title</label>
+                        <input type="text" id="clubNoticeTitle" placeholder="e.g. New Event Announced" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clubNoticeMessage">Notice Details</label>
+                        <textarea id="clubNoticeMessage" rows="5" placeholder="Write the full announcement here..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clubNoticeTarget">Target Audience</label>
+                        <select id="clubNoticeTarget" required>
+                            <option value="all">All Students</option>
+                            <option value="Coding">Students interested in Coding</option>
+                            <option value="Robotics">Students interested in Robotics</option>
+                            <option value="Dance">Students interested in Dance</option>
+                            <option value="Singing">Students interested in Singing</option>
+                            <option value="Photography">Students interested in Photography</option>
+                            <option value="Graphic Design">Students interested in Graphic Design</option>
+                            <option value="Sports">Students interested in Sports</option>
+                            <option value="Volunteering">Students interested in Volunteering</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn">Publish Notice</button>
+                    <p id="clubNoticeMessageStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Published Notices</h2>
+            <div id="clubManagedNoticeList" class="grid">
+                <p>Loading notices...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Club Administration Portal</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Management | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="../index.html" class="brand">
+                <span class="brand-row">
+                    <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo" class="university-logo">
+                    <span class="brand-text">
+                        <strong>Opportunity-X</strong>
+                        <small>Campus Opportunity Portal</small>
+                    </span>
+                </span>
+            </a>
+
+            <nav class="links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="student.html">Students</a>
+                <a href="clubs.html" class="active">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="notices.html">Notices</a>
+                <a href="registrations.html">Registrations</a>
+                <a href="../index.html">Home</a>
+                <a href="../admin-login.html" onclick="sessionStorage.removeItem('opportunityX_session')">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Club Management</h1>
+            <p>Review club applications and manage university clubs.</p>
+        </section>
+
+        <section class="section">
+            <h2>Pending Club Applications</h2>
+            <p>Review each application before allowing a club to appear on the homepage.</p>
+
+            <div id="clubApplicationList" class="grid">
+                <p>Loading club applications...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Approved Clubs</h2>
+            <p>These clubs are approved and can be displayed to students.</p>
+
+            <div id="adminClubList" class="grid">
+                <p>Loading clubs...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Add a Club Manually</h2>
+            <p>Use this form when the University Admin needs to add a club directly.</p>
+
+            <form id="clubForm" class="card">
+                <div class="form-group">
+                    <label for="clubName">Club Name</label>
+                    <input type="text" id="clubName" name="clubName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clubCategory">Club Category</label>
+                    <select id="clubCategory" name="clubCategory" required>
+                        <option value="">Select category</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Creative">Creative</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Social Service">Social Service</option>
+                        <option value="Literary">Literary</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="clubDescription">Club Description</label>
+                    <textarea id="clubDescription" name="clubDescription" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="clubSkills">Skills (separate with commas)</label>
+                    <input type="text" id="clubSkills" name="clubSkills" placeholder="Coding, Teamwork, Photography" required>
+                </div>
+
+                <button type="submit" class="btn">Add Club</button>
+                <p id="clubMessage" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Opportunity-X â€” Campus Opportunity Portal</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

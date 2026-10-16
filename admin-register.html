@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Club | Opportunity-X</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="navbar">
+            <a href="index.html" class="brand brand-stacked">
+                <div class="brand-row">
+                    <img src="assets/opportunity-x-logo.png" alt="Opportunity-X Logo">
+                    <span class="brand-text">
+                        <strong>Opportunity-X</strong>
+                        <small>Campus Opportunity Portal</small>
+                    </span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="club-login.html">Club Admin Login</a>
+                <a href="admin-login.html">University Admin Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container auth-container">
+        <section class="auth-card">
+            <h1>Register Your Club</h1>
+            <p>Submit your club details and create your Club Admin account.</p>
+
+            <div class="card">
+                <strong>Approval Process</strong>
+                <p>Your application will remain pending until the University Admin reviews it. Your club will become visible to students only after approval.</p>
+            </div>
+
+            <form id="clubRegistrationForm">
+                <h3>Club Details</h3>
+
+                <div>
+                    <label for="clubName">Club Name</label>
+                    <input type="text" id="clubName" name="clubName" required>
+                </div>
+
+                <div>
+                    <label for="clubCategory">Club Category</label>
+                    <select id="clubCategory" name="clubCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Literary">Literary</option>
+                        <option value="Social Service">Social Service</option>
+                        <option value="Entrepreneurship">Entrepreneurship</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="clubDescription">Club Description</label>
+                    <textarea id="clubDescription" name="clubDescription" rows="4" required></textarea>
+                </div>
+
+                <div>
+                    <label for="clubSkills">Skills or Interests</label>
+                    <input type="text" id="clubSkills" name="clubSkills" placeholder="e.g. Coding, Dance, Photography">
+                </div>
+
+                <div>
+                    <label for="clubContactEmail">Official Club Contact Email</label>
+                    <input type="email" id="clubContactEmail" name="clubContactEmail" required>
+                </div>
+
+                <div>
+                    <label for="clubContactPhone">Contact Number</label>
+                    <input type="tel" id="clubContactPhone" name="clubContactPhone" required>
+                </div>
+
+                <h3>Club Admin Account</h3>
+
+                <div>
+                    <label for="clubAdminName">Club Admin Full Name</label>
+                    <input type="text" id="clubAdminName" name="clubAdminName" required>
+                </div>
+
+                <div>
+                    <label for="clubAdminEmail">Club Admin Email</label>
+                    <input type="email" id="clubAdminEmail" name="clubAdminEmail" required>
+                </div>
+
+                <div>
+                    <label for="clubAdminUsername">Create Username</label>
+                    <input type="text" id="clubAdminUsername" name="clubAdminUsername" minlength="4" required>
+                </div>
+
+                <div>
+                    <label for="clubAdminPassword">Create Password</label>
+                    <input type="password" id="clubAdminPassword" name="clubAdminPassword" minlength="8" required>
+                </div>
+
+                <div>
+                    <label for="clubAdminConfirmPassword">Confirm Password</label>
+                    <input type="password" id="clubAdminConfirmPassword" name="clubAdminConfirmPassword" minlength="8" required>
+                </div>
+
+                <button type="submit" class="btn">Submit Club Application</button>
+                <p id="clubRegistrationMessage" role="status"></p>
+            </form>
+
+            <p class="auth-footer">
+                Already registered?
+                <a href="club-login.html">Club Admin Login</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

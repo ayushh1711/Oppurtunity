@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Students | Opportunity-X</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="university-header">
+        <a href="../index.html" class="university-brand">
+            <img src="../assets/gehu-logo.png" alt="Graphic Era Hill University Logo" class="university-logo">
+            <div class="university-text">
+                <h2>Graphic Era Hill University</h2>
+                <p>Dehradun, Uttarakhand</p>
+            </div>
+        </a>
+        <span class="university-label">Administrator Portal</span>
+    </header>
+
+    <nav class="topnav">
+        <a class="brand" href="../index.html" style="display:flex;align-items:center;gap:10px;">
+            <img src="../assets/opportunity-x-logo.png" alt="Opportunity-X Logo"
+                style="width:42px;height:42px;object-fit:contain;background:white;border-radius:7px;padding:3px;">
+            <span>Opportunity-X</span>
+        </a>
+        <div class="links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="student.html">Students</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <a href="notices.html">Notices</a>
+            <a href="registrations.html">Registrations</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Student Directory</h1>
+        <p class="muted">View students registered on the Opportunity-X portal.</p>
+
+        <div class="card">
+            <label for="studentSearch">Search Students</label>
+            <input type="search" id="studentSearch" placeholder="Search by ID, name, course or email">
+
+            <div style="overflow-x:auto;margin-top:20px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                        <tr>
+                            <td colspan="6">Student records will appear here when connected to the application.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="studentCount" class="muted">Total students: 0</p>
+        </div>
+
+        <p><a class="btn" href="dashboard.html">Back to Dashboard</a></p>
+    </main>
+
+    <footer class="footer">
+        <p>Opportunity-X | Graphic Era Hill University</p>
+        <p>Student Directory</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

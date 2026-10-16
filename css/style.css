@@ -1,0 +1,504 @@
+
+:root {
+    --navy: #0b1f3a;
+    --navy-light: #17365d;
+    --blue: #2455a4;
+    --white: #ffffff;
+    --background: #f4f7fc;
+    --text: #18263d;
+    --muted: #68778d;
+    --border: #dce4f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.university-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 7%;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.university-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.university-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.university-text h2 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.university-text p {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.university-label {
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 7%;
+    background: var(--navy);
+    color: var(--white);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.links a:hover {
+    color: #b9d4ff;
+}
+
+.hero {
+    padding: 85px 7% 95px;
+    color: var(--white);
+    background: linear-gradient(125deg, var(--navy), var(--navy-light));
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 1px solid #8094b0;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    max-width: 750px;
+    margin: 22px 0 16px;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.15;
+}
+
+.hero p {
+    max-width: 680px;
+    color: #dbe6f6;
+    font-size: 17px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border: 1px solid var(--navy);
+    border-radius: 7px;
+    background: var(--navy);
+    color: var(--white);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--navy-light);
+}
+
+.hero .btn {
+    background: var(--white);
+    color: var(--navy);
+    border-color: var(--white);
+}
+
+.hero .btn.secondary {
+    background: transparent;
+    color: var(--white);
+    border-color: #b9c8dd;
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+.container h2 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 29px;
+}
+
+.muted {
+    margin-top: 0;
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin-top: 24px;
+}
+
+.card {
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 6px 20px rgba(11, 31, 58, 0.06);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.opportunity-banner {
+    padding: 35px;
+    border-left: 5px solid var(--navy);
+}
+
+.opportunity-banner p {
+    max-width: 720px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 28px 7%;
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #dbe6f6;
+    font-size: 13px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--white);
+    color: var(--text);
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8baee8;
+    border-color: var(--blue);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+form {
+    display: grid;
+    gap: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    background: #edf2fa;
+    color: var(--navy);
+}
+
+.site-header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.site-header .navbar {
+    width: 86%;
+    max-width: 1200px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.site-header .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.site-header .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-header .brand-row img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.site-header .brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.site-header .brand-text strong {
+    color: var(--navy);
+    font-size: 15px;
+}
+
+.site-header .brand-text small {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.site-header nav a {
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.site-header nav a:hover {
+    color: var(--blue);
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 65vh;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 6px 20px rgba(11, 31, 58, 0.06);
+}
+
+.auth-card h1 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 28px;
+}
+
+.auth-card > p {
+    color: var(--muted);
+}
+
+.auth-card form {
+    margin-top: 24px;
+}
+
+.auth-card .btn {
+    width: 100%;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.auth-footer a,
+.card-secondary-link a {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+#clubLoginMessage,
+#clubRegistrationMessage {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    .university-header {
+        padding: 14px 5%;
+    }
+
+    .university-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .university-text h2 {
+        font-size: 16px;
+    }
+
+    .university-label {
+        display: none;
+    }
+
+    .topnav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 5%;
+    }
+
+    .links {
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .container {
+        width: 90%;
+        padding: 32px 0;
+    }
+
+    .opportunity-banner {
+        padding: 24px;
+    }
+
+    .site-header .navbar {
+        width: 90%;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .site-header .brand-row img {
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+    }
+
+    .site-header .brand-text strong {
+        font-size: 14px;
+    }
+
+    .site-header nav {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .auth-card {
+        padding: 22px;
+    }
+}
